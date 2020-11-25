@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Prejudgement</title>
+	
+<style>
+  @import url("https://use.typekit.net/jdz2njw.css");
+</style>
+</head>
+<body>
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>P R E J U D G E M E N T</h1>
+<h2>People often make prejudgments about people’s personalities and manners based on the way they speak, specifically when they talk in their native dialects. The minute we speak, we are giving clues about ourself — where we grew up, with whom we grew up, and where we went to school.Languages possess the power to shape narratives and build atmospheres within groups and communities. <br><br>This website will showcase audios from different speakers, where it invites you to form ideas about them when you hear their voices.</h2>
+<hr>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('English')"> English </button>
+  <button class="btn" onclick="filterSelection('Chinese')"> Chinese</button>
+  <button class="btn" onclick="filterSelection('Casestudies')"> Case Studies</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/fran.mp3" type="audio/mp3">
+		</audio>
+		<a href="fran.html"><h4>Fran Drescher</h4></a>
+      <p>Francine Joy Drescher was born on September 30, 1957 in Flushing, Queens, New York, to Sylvia Drescher, a bridal consultant, and Mort Drescher, a naval systems analyst. 
+</p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/james.mp3" type="audio/mp3">
+		</audio>
+		<h4>James Earl Jones</h4>
+      <p>James Earl Jones is one of greatest stage and screen actors in USA. He was born on January 17, 1931 in Arkabutla, Mississippi. 
+</p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/sarah.mp3" type="audio/mp3">
+		</audio>
+      <h4>Sarah Palin </h4>
+      <p>Sarah Palin was born on February 11, 1964, Sandpoint, Idaho. She is an American politician who served as governor of Alaska (2006–09) and was selected by Sen.</p>
+    </div>
+  </div>
+  
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/dolly.mp3" type="audio/mp3">
+		</audio>
+      <h4>Dolly Parton </h4>
+      <p>Dolly Parton is a country music icon and actress Dolly Parton born on January 19, 1946, Locust Ridge, TN. She has opened her Dollywood theme park in 1986. </p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/john.mp3" type="audio/mp3">
+		</audio>
+      <h4>John F. Kennedy </h4>
+      <p>John F. Kennedy was born on May 29, 1917, Brookline, Massachusetts, U.S. He was the 35th president of the United States (1961–63).
+</p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/tom.mp3" type="audio/mp3">
+		</audio>
+      <h4>Tom Brokaw </h4>
+      <p>Tom Brokaw was born on February 6, 1940, Webster, South Dakota, served as anchor of 'NBC Nightly News' from 1982 to 2004. </p>
+    </div>
+  </div>
+
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/wendy.mp3" type="audio/mp3">
+		</audio>
+      <h4>Wendy Williams </h4>
+      <p>Wendy Williams was born on July 19, 1964, Asbury Park, New Jersey, she is a radio DJ and TV talk show host known for her no-nonsense attitude and brash on-air personality. </p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/rosie.mp3" type="audio/mp3">
+		</audio>
+      <h4>Rosie Perez</h4>
+      <p>Rosie Perez was born in Bushwick, Brooklyn, New York City, to Lydia Perez and Ismael Serrano, a merchant marine.</p>
+    </div>
+  </div>
+  <div class="column English">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/rhett.mp3" type="audio/mp3">
+		</audio>
+      <h4>Rhett Butler </h4>
+      <p>A fictional character, the rakish third husband of Scarlett O’Hara in Margaret Mitchell’s novel Gone with the Wind (1936). </p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	
+	
+	
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
