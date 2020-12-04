@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="back"><a href="../index.html">Back </a></a>
+</div>
+	
+<div class="grid-container">
+	
+  <div class="grid-item1">
+	 <h style="color:#3DB9E4">Yao Ming</h>
+	<p>Yao Ming is a Chinese basketball executive and former professional player. He played for the Shanghai Sharks of the Chinese Basketball Association and the Houston Rockets of the National Basketball Association. <br><br>Born: September 12, 1980, Shanghai, China<br><br>Education: Shanghai Jiao Tong University<br><br>Known for: Chinese Basketball Player and NBA Hall of Fame Player 
+
+</p>
+	</div>
+
+	<div class="grid-item2">
+	  <div class="video">
+	<video controls width="100%">
+            <source src="../videos/yaoming.mp4" type="video/mp4"></video>
+       </div>	
+</div>
+</div>	
+</body>
+<style>
+	body 
+	{background-color: black;
+	margin: 5%;}	
+	h { 
+	font-family:"Avenir"; 
+	color: white;
+	font-size: 40px;}
+	p {
+	margin-right: 5%;
+	color: white;
+	font-size: 20px;
+	font-family: ambroise-std, serif;
+	font-weight: 300;
+	font-style: normal;}
+	
+	.grid-container {
+	display: inline-grid;
+    grid-template-columns: 2fr 3fr;
+    grid-row-gap: 13%;
+    margin-top: 10%;
+    justify-content: space-between;}
+	.grid-item1 {margin-right: 5%;}
+	
+	#mySidenav a {
+  	position: absolute;
+	text-align: end;
+ 	left: -23px;
+ 	padding: 15px;
+ 	width: 50px;
+ 	text-decoration: none;
+ 	font-size: 15px;
+	font-family: "Avenir";
+	font-weight: 500;
+ 	color: white;
+	background-color: #3DB9E4;}
+	
+	#mySidenav a:hover {
+		background-color: white;
+		color: #3DB9E4;
+	}
+
+
+	
+</style>
+</html>
+

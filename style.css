@@ -1,18 +1,65 @@
 
+a:link {
+  text-decoration: none;
+}
+
+#mySidenav a {
+  position: fixed;
+  left: -10px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 150px;
+	color: white;
+	font-family: "Avenir";
+	font-weight: 500;
+	font-size: 15px;}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #3DB9E4;
+}
+
+#purpose {
+  top: 80px;
+  background-color: #027EA8;
+}
+
+#audios {
+  top: 140px;
+  background-color: #04607F;
+}
+
+#socialevaluation {
+  top: 200px;
+  background-color: #004359;
+}
+
+#generalization {
+  top: 280px;
+  background-color: #003142;
+}
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: black;
   padding: 20px;
   font-family: Arial;
+  text-decoration: none;
 }
 
+.active {
+  background-color: #4CAF50;
+}
 /* Center website */
 .main {
- 	max-width: 100%;
+ 	max-width: 80%;
  	margin: auto;
 }
 
@@ -21,6 +68,7 @@ h1 {
   	font-size: 30px;
   	word-break: break-all;
   	text-align: center;
+	color: white;
 }
 
 h2 {
@@ -30,6 +78,19 @@ h2 {
 	padding: 10%;
   	font-size: 30px;
   	text-align: center;
+	color: white;
+}
+
+h4 {
+	font-family: ambroise-std, serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20px;
+	color:  black;
+	text-align: center;}
+
+h4:hover {
+	color:  #3DB9E4;
 }
 
 p {
@@ -52,7 +113,8 @@ p {
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide all elements by default */
+  display: none; 
+	/* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
@@ -66,6 +128,7 @@ p {
 .content {
   background-color: white;
   padding: 10px;
+
 }
 
 /* The "show" class is added to the filtered elements */
@@ -80,13 +143,30 @@ p {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+	color: #3DB9E4;
+	font-family: "Avenir";
+	font-weight: 500;
+	font-size: 15px;
+	
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: #3DB9E4;
+  color: white;
 }
 
 .btn.active {
-  background-color: #666;
+  background-color: #3DB9E4;
   color: white;
+}
+
+.evaluation {
+	color: white;
+	column-count: 3;
+	font-size: 20px;
+}
+
+.pronunciations {
+	color: white;
+	font-size: 20px;
 }
