@@ -1,158 +1,229 @@
-<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style2.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style3.css">
+	<title>Prejudgement</title>
+	
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  @import url("https://use.typekit.net/jdz2njw.css");
 </style>
-<body class="w3-black w3-content" style="max-width:1600px">
+</head>
+	
+<body>
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PORTFOLIO</b></h4>
-    <p class="w3-text-grey">Template by W3.CSS</p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
-  </div>
-  <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</nav>
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="purpose">Purpose</a>
+  <a href="#" id="audios">Audios</a>
+  <a href="#" id="socialevaluation">A Study of Social Evaluation</a>
+	<a href="#" id="generalization">Generalization of Pronunciations on Chinese English Speakers</a>
+</div>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<!-- MAIN (Center website) -->
+<div class="main">
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
-
-  <!-- Header -->
-<h1>P R E J U D G E M E N T</h1>
-<h2>People often make prejudgments about people’s personalities and manners based on the way they speak, specifically when they talk in their native dialects. The minute we speak, we are giving clues about ourself — where we grew up, with whom we grew up, and where we went to school.Languages possess the power to shape narratives and build atmospheres within groups and communities. <br><br>This website will showcase audios from different speakers, where it invites you to form ideas about them when you hear their voices.</h2>
+<h1 style="color:#3DB9E4">P R E J U D G E M E N T</h1>
+<h2>People often make prejudgments about people’s social background and appearance based on the way they speak, specifically when they talk in foreign accents, The minute we speak, we are giving clues about ourself — where we grew up, with whom we grew up, and where we went to school. Languages possess the power to shape narratives and build atmospheres within groups and communities.<br><br> This website will showcase audios from different speakers of Chinese descents, where it invites you to form ideas about them when you hear their voices.</h2>
 <hr>
+<br>
+<br>
+<h1 style="color:#027EA8">P U R P O S E</h1>
+<h2>It welcomes audiences to make guesses and judgements about the social background of the speaker by listening to the audio only before researching the speaker and clicking the speaker’s name for biological information. It is an interactive process for individuals themselves to distinguish if they make biased prejudgements unconsciously based on listening to the way people speak in the following audios.  
+</h2>
 
-  <header id="portfolio">
-    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
-    <h1><b>My Portfolio</b></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <span class="w3-margin-right">Filter:</span> 
-      <button class="w3-button w3-black">ALL</button>
-      <button class="w3-button w3-white">Design</button>
-      <button class="w3-button w3-white w3-hide-small">Photos</button>
-      <button class="w3-button w3-white w3-hide-small">Art</button>
-    </div>
-    </div>
-  </header>
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <audio controls>
+<hr>	
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show All</button>
+  <button class="btn" onclick="filterSelection('1')"> Prior & Early 20th Century </button>
+  <button class="btn" onclick="filterSelection('2')"> Mid 20th Century</button>
+  <button class="btn" onclick="filterSelection('3')"> Late 20th Century</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column 3">
+    <div class="content">
+		<audio controls>
 		<source src="../website/audios/jimmyoyang.mp3" type="audio/mp3">
 		</audio>
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
+		<a href="../website/speakers/jimmy.html"><h4>Jimmy O. Yang</h4></a>
     </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
+  </div>
+  <div class="column 3">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/yaoming.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/yaoming.html"><h4>Yao Ming</h4></a>
     </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
+  </div>
+  <div class="column 1">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/songmeiling.mp3" type="audio/mp3"></audio>
+		<a href="../website/speakers/songmeiling.html">
+		<h4>Song Mei Ling </h4></a>
+	  </div>
   </div>
   
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container w3-margin-bottom">
-      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <div class="w3-third w3-container">
-      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
-      <div class="w3-container w3-white">
-        <p><b>Lorem Ipsum</b></p>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
+  <div class="column 2">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/maggiecheung.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/maggie.html">
+			<h4>Maggie Cheung </h4></a>
+  </div>
+</div>
+	  
+  <div class="column 1">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/yuanlongping.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/yuanlongping.html">
+			<h4>Yuan Long Ping </h4></a>
     </div>
   </div>
-
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
+  <div class="column 3">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/edisonchen.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/edison.html">
+			<h4>Edison Chen </h4></a>
+	</div>
   </div>
 
-  <!-- Images of Me -->
-  <div class="w3-row-padding w3-padding-16" id="about">
-    <div class="w3-col m6">
-      <img src="/w3images/avatar_g.jpg" alt="Me" style="width:100%">
-    </div>
-    <div class="w3-col m6">
-      <img src="/w3images/me2.jpg" alt="Me" style="width:100%">
+  <div class="column 2">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/liuqiangdong.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/liuqiangdong.html">
+			<h4>Liu Qiang Dong </h4></a>
     </div>
   </div>
+  <div class="column 1">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/yudeling.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/yudeling.html">
+			<h4>Yu De Ling</h4></a>
+    </div>
+  </div>
+  <div class="column 2">
+    <div class="content">
+		<audio controls>
+		<source src="../website/audios/joanchen.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/joan.html">
+			<h4>Joan Chen </h4></a>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+	
+<hr>
+	<br>
+	<div class="evaluation">
+<h1 style="color:#027EA8">SOCIAL EVALUATION</h1>
+		
+<p style="text-indent:50px">This study is conducted through examinations and evaluations of Asian accented English by English-speaking American listeners. The present study consisted of an online survey in which participants rated different voices on measures of ‘Attractiveness’, ‘Status’, and ‘Dynamism’. Three different Accent Conditions were used: Mainstream U.S. English [MUSE], Asian Accented English [AA], and Brazilian Portuguese Accented English [BP]. As predicted, the Asian Accented speakers were rated significantly lower than the MUSE speakers on all measures, and significantly lower than the Brazilian Portuguese speakers on two out of the three measures, supporting the hypothesis that Asian accents specifically are viewed negatively. 
+</p>
 
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-    <h4><b>About Me</b></h4>
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <hr>
-    
-  
+<p style="text-indent:50px">Even on intelligence, a characteristic that forms a cornerstone of the ‘Model Minority’ stereotype of Asian Americans, Asian Accented voices were rated significantly lower than the other two groups. These results highlight the need for greater general awareness of language-based discrimination, as well as research into the often subtle, unconscious ways that attitudes about language manifest in social interaction.</p> 
+		
+<p style="text-indent:50px">There were 69 respondents (all of whom self-identified as native speakers of American English) whose data analyzed. The respondents ranged in age from 18–63, with a mean age of 27.03, and a median age of 25. They came from all over the United States, although not all areas were equally represented; the majority of respondents were from the Northeastern and Western United States (30 and 28, respectively), with many fewer from the Midwest (6) and South (5). The gender and race/ethnicity of the respondents was also unevenly distributed: 72% of the respondents were female, and 75% were white.</p> 
+</div>
 
+<h4 style="color: white">For more information please visit <a href="https://repository.upenn.edu/cgi/viewcontent.cgi?article=1299&context=pwpl">https://repository.upenn.edu/cgi/viewcontent.cgi?article=1299&context=pwpl</a></h4>
+
+<hr>
+<br>
+	
+<div class="pronunciations">
+	<h1 style="color:#027EA8">GENERALIZATION OF PRONUNCIATIONS ON <br>CHINESE ENGLISH SPEAKERS</h1>
+	
+	<p style="text-indent:50px">Problems with vowels: Chinese and English differ greatly in the number of vowels. While English has 15 vowels, Chinese has only 5 vowels. Because of this difference, Chinese learners need to learn how to pronounce many new vowels when they start to learn English.</p> 
+	<p style="text-indent:50px">Problems with consonants: Chinese and English have roughly the same numbers of consonants. However, some English consonants do not exist in Chinese. This poses difficulties for Chinese learners trying to produce these consonants.</p>
+	
+	<p style="text-indent:50px">Suprasegmental problems: Suprasegmental aspects of pronunciation deal with rhythm, stress, and intonation in pronunciation (Ohata, 2004). Comparing Chinese and English phonology, it is evident that the two languages have distinct features in terms of rhythm, stress, and intonation.</p>
+	
+	<h4 style="color: white">For more information please visit <a href="https://files.eric.ed.gov/fulltext/EJ1152473.pdf">https://files.eric.ed.gov/fulltext/EJ1152473.pdf</a></h4>
+
+
+</div>
+	
+<!-- END MAIN -->
+</div>
+
+	
+	
+	</body>
+	
 <script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
+	
+window.onscroll = function() {myFunction()};
 
-</body>
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+	
+	
+	
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	
+</script>
 </html>
