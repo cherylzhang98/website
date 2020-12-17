@@ -1,21 +1,133 @@
 @charset "UTF-8";
+/* width */
+
+body {
+    margin: 0;
+    background: #f0efed;
+	overflow-y: hidden;
+}
+
+p {
+  color: white;
+  font-size: 15px;
+  font-family:'antic-slab';
+  font-weight: 300;
+}
+
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: black;
+}
+
+.right {
+  right: 0;
+  background-color: black;
+  position: absolute;
+  padding-top: 10%;
+  left: 50;
+  text-align: center;
+}
+
+
+.filter{
+	padding-top: 10%;
+	padding-left: 2%;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 2%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+/*  float: left;*/
+	margin-left: 15%;
+    width: 50%;
+    display: none; 
+	/* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+	margin-left: 10%;
+	border-radius: 25px;
+/*  	border: 1px solid white;*/
+/*	background-image: linear-gradient(to bottom, #606c88, #3f4c6b);*/
+	background-color:white;
+	text-align: center;
+}
+
+.content h4 {
+	color: black;
+	font-display: none;
+}
+
+.content p{
+	color:#3DB9E4;
+	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+    font-weight: 400;
+}
+
+/*filter*/
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+	margin-left: 3%;
+  border: none;
+  outline: none;
+  padding: 13px 30px;
+  background-color: white;
+  cursor: pointer;
+	color: #3DB9E4;
+	font-family: "Avenir";
+	font-weight: 500;
+	font-size: 13px;
+	border-radius: 50px;
+	
+}
+
+.btn:hover {
+  background-color: #3DB9E4;
+  color: white;
+}
+
+.btn.active {
+  background-color: #3DB9E4;
+  color: white;
+}
+
 /* CSS Document */
 a:link {
   text-decoration: none;
-	font-family: "Avenir";
-	font-size: 14px;
-}
-
-body {margin:0;
-background:black;
-}
-
-
-p {
-	color: #F0EFED;
-	font-size: 17px;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
-	font-weight: 300;
+  font-family: "Avenir";
+  font-size: 14px;
 }
 
 ul {
@@ -24,20 +136,20 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: black;
-	z-index: 3;
-	position: fixed;
-	  border-bottom: 1px solid #F0EFED;
-	width: 100%;
+  z-index: 3;
+  position: fixed;
+  border-bottom: 1px solid #3DB9E4;
+  width: 100%;
 }
 
 li {
-  float: right;
+  float: left;
 }
 
 li a {
   display: block;
   color: white;
-  text-align: right;
+  text-align: center;
   padding: 14px 40px;
   text-decoration: none;
 }
@@ -51,56 +163,77 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #3DB9E4;
-}
-
-.vl {
-background-image: -webkit-linear-gradient(#56CCF2 10%,#2F80ED 60%);
- 	height: 100%;
-	z-index: -2;
-	position: fixed;
+  background-color: #3db9e5;
 }
 
 .light {
+  color: white;
+}
+
+
+
+/**/
+
+.instruction {
 	color: white;
-}
-
-.box {
-	width: 35%;
-	height: 65%;
-	background-color: #F0EFED;
-	z-index: 5;
-	margin-left: 55%;
-	margin-top: 10%;
-	position: fixed;
-}
-
-.box p {
-	color: black;
-	padding: 7%;
+	width: 470px;
+	margin-top: -6%;
+	padding-left: 14%;
+	padding-bottom: 10%;
 	font-size: 15px;
-}
-
-#container {
+	font-family:"Avenir";
+	font-weight: 300;
 	
-  	display: grid;
-  	grid-template-columns: auto;
-  	grid-gap: 10%;
- 	background-color: transparent;
-	padding-top: 10%;
-	padding-left: 10%;}
-
-
-#container{
-  text-align: left;
-  font-size: 30px;
 }
 
 
-#container p{
-	margin-left: 10%;
+.centered h{
+	color: white;
+	font-size: 20px;
+	font-family:"Avenir";
+	font-weight: 500;
+	text-shadow: 0 0 3px black;
+	
 }
 
-#container p:hover {
-	color: #56CCF2;
+.centered p{
+	color: white;
+	font-family:"Avenir";
+    font-weight: 500;
+	font-size: 16px;
+}
+
+.box1 {
+	background-color: white;
+	width: 250px;
+	height:250px;
+	align-self: center;
+	padding: 15%;
+	border-radius: 45% 55% 37% 63% / 47% 40% 60% 53%;
+	background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.box2 {
+	background-color: white;
+	width: 250px;
+	height:250px;
+	float: right;
+	border-radius:36% 64% 70% 30% / 30% 30% 70% 70%;
+	padding: 5%;
+	background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
+}
+
+.box3 {
+	background-color: white;
+	width: 250px;
+	height:250px;
+	align-self: center;
+	border-radius: 69% 31% 54% 46% / 41% 66% 34% 59%;
+	padding: 10%;
+	background-image: linear-gradient(to top right, #0052D4, #65C7F7,#9CECFB);
+	margin-top: 30%;
+	margin-bottom: 25%;
+	
 }

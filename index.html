@@ -1,87 +1,213 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Accent</title>
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accent</title>
+    <link rel="stylesheet" href="style.css" />
+	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
 	
-<ul>
-	<li><a class="active" href="../website/index.html">Home</a></li>
-  <li><a href="../website/about.html">About</a></li>
-  <li><a href="../website/evaluation.html">Social Evaluation Study</a></li>
 
-</ul>
+  <body>
 
-<div class="vl">light</div>
-<div class="box"><p><b>GENERALIZATION OF PRONUNCIATIONS ON CHINESE ENGLISH SPEAKERS</b><br><br>Problems with vowels: Chinese and English differ greatly in the number of vowels. While English has 15 vowels, Chinese has only 5 vowels. Because of this difference, Chinese learners need to learn how to pronounce many new vowels when they start to learn English.<br><br>Problems with consonants: Chinese and English have roughly the same numbers of consonants. However, some English consonants do not exist in Chinese. This poses difficulties for Chinese learners trying to produce these consonants.<br><br>Suprasegmental problems: Suprasegmental aspects of pronunciation deal with rhythm, stress, and intonation in pronunciation (Ohata, 2004). Comparing Chinese and English phonology, it is evident that the two languages have distinct features in terms of rhythm, stress, and intonation.</p></div>
+    <ul>
+      <li><a class="active" href="../website/index.html">Prejudgement</a></li>
+      <li><div class="about"><a href="../website/about.html">About</a></div></li>
+		<li><div class="study"><a href="../website/evaluation.html">Social Evaluation Study</a></div></li>
+    </ul>
 
-<div id="container">
-<div><audio controls>
-		<source src="../website/audios/edisonchen.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/edison.html">
-			<p>Speaker 1 </p></a>
-</div>
-
-<div><audio controls>
+<div class="split left">
+  <div class="centered">
+<div class="filter">
+<div id="myBtnContainer">
+	<button class="btn active" onclick="filterSelection('all')">All</button>
+  <button class="btn" onclick="filterSelection('1')"> Light Accent </button>
+  <button class="btn" onclick="filterSelection('2')"> Medium Accent</button>
+  <button class="btn" onclick="filterSelection('3')"> Heavy Accent</button>
+</div>  
+	  
+<div class="row">
+  <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
 		<source src="../website/audios/jimmyoyang.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/jimmy.html">
-			<p>Speaker 2 </p></a>
-  </div>  
-<div><audio controls>
+		<a href="../website/speakers/jimmy.html"><h4>VIEW</h4></a>
+    </div>
+  </div>
+  <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/yaoming.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/yaoming.html"><h4>VIEW</h4></a>
+    </div>
+  </div>
+  <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/songmeiling.mp3" type="audio/mp3"></audio>
+		<a href="../website/speakers/songmeiling.html">
+		<h4>VIEW</h4></a>
+	  </div>
+  </div>
+  
+  <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
 		<source src="../website/audios/maggiecheung.mp3" type="audio/mp3">
 		</audio>
 		<a href="../website/speakers/maggie.html">
-			<p>Speaker 3 </p></a>
+			<h4>VIEW</h4></a>
   </div>
-<div><audio controls>
-		<source src="../website/audios/jackma.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/jackma.html">
-			<p>Speaker 4 </p></a>
-  </div>
-<div><audio controls>
-		<source src="../website/audios/yaoming.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/yaoming.html">
-			<p>Speaker 5 </p></a>
-  </div>
-<div><audio controls>
-		<source src="../website/audios/songmeiling.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/songmeiling.html">
-			<p>Speaker 6 </p></a>
-  </div>
-<div><audio controls>
-		<source src="../website/audios/yudeling.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/yudeling.html">
-			<p>Speaker 7 </p></a>
-  </div>
-<div><audio controls>
-		<source src="../website/audios/liuqiangdong.mp3" type="audio/mp3">
-		</audio>
-		<a href="../website/speakers/liuqiangdong.html">
-			<p>Speaker 8 </p></a>
-  </div>
-<div><audio controls>
+</div>
+	  
+  <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
 		<source src="../website/audios/yuanlongping.mp3" type="audio/mp3">
 		</audio>
 		<a href="../website/speakers/yuanlongping.html">
-			<p>Speaker 9</p></a>
+			<h4>VIEW</h4></a>
+    </div>
+  </div>
+  <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/edisonchen.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/edison.html">
+			<h4>VIEW </h4></a>
+	</div>
+  </div>
+
+  <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/liuqiangdong.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/liuqiangdong.html">
+			<h4>VIEW</h4></a>
+    </div>
+  </div>
+  <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/yudeling.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/yudeling.html">
+			<h4>VIEW</h4></a>
+    </div>
+  </div>
+  <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="content">
+		<audio controls style="width: 100%;">
+		<source src="../website/audios/jackma.mp3" type="audio/mp3">
+		</audio>
+		<a href="../website/speakers/jackma.html">
+			<h4>VIEW</h4></a>
+    </div>
   </div>
 </div>
+</div>
+	</div>
+	  </div>
+
+<div class="split right">
+  <div class="centered">
+	  <div class="instruction"><h>After listening to the audios, drag words from the three categories below that best relate to how you imagine the speakers. </h></div>
+	  <div class="box1"><h>ATTRACTIVENESS</h>
+		  <p id="friendly" draggable="true" ondragstart="drag(event)">More Friendly</p>
+	  	  <p id="unfriendly" draggable="true" ondragstart="drag(event)">Less Friendly</p>
+	 	  <p id="rude" draggable="true" ondragstart="drag(event)">Rude</p>
+	      <p id="polite" draggable="true" ondragstart="drag(event)">Polite</p>
+	      <p id="honest" draggable="true" ondragstart="drag(event)">Honest</p>
+	      <p id="dishonest" draggable="true" ondragstart="drag(event)">Disonest</p></div>
+	  
+	  <div class="box2"><h>STATUS</h>
+		  <p id="organize" draggable="true" ondragstart="drag(event)">More Organize</p>
+	  	  <p id="disorganize" draggable="true" ondragstart="drag(event)">Less Organize</p>
+	  	  <p id="low" draggable="true" ondragstart="drag(event)">Lower Class</p>
+	  	  <p id="upper" draggable="true" ondragstart="drag(event)">Upper Class</p>
+	  	  <p id="intelligent" draggable="true" ondragstart="drag(event)">Intelligent</p>
+	      <p id="unintelligent" draggable="true" ondragstart="drag(event)">Unintelligent</p></div>	
+	  
+	  <div class="box3"><h>DYNAMISM</h>
+		  <p id="shy" draggable="true" ondragstart="drag(event)">Shy</p>
+	  	  <p id="talkative" draggable="true" ondragstart="drag(event)">Less Organize</p>
+	  	  <p id="unsure" draggable="true" ondragstart="drag(event)">Unsure</p>
+	  	  <p id="confident" draggable="true" ondragstart="drag(event)">Confident</p>
+	  	  <p id="energetic" draggable="true" ondragstart="drag(event)">Energetic</p>
+	      <p id="lazy" draggable="true" ondragstart="drag(event)">Lazy</p></div>
+  </div>
+</div>
+	 
+	  
+
+  </body>
+
+  <script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+  var data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+}
+	  
+//filter
+	  
 
 	
-</body>
-	
-<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
 
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+	  
 </script>
-	
-
 </html>
