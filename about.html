@@ -2,30 +2,41 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>ABOUT</title>
 </head>
 
 <body>
 	
 <ul>
-  <li><a href="../website/index.html">Home</a></li>
-  <li><a class="active">About</a></li>
-  <li><a href="../website/evaluation.html">Social Evaluation Study</a></li>
-</ul>
+		<div class="title">
+      <li><a class="active" href="../website/index.html"><b>PREJUDGEMENT</b></a></li></div>
+		<div class="sub">
+        <li><div class="about"><a href="../website/about.html">About</a></div></li>
+		<li><div class="study"><a href="../website/evaluation.html">Why this is IMPORTANT</a></div></li>
+		<li><div class="analysis"><a href="../website/about.html">Analysis</a></div></li>
+		</div>
+    </ul>
 
 <div class="content">
-<h style="color:#3DB9E4"><b>PREJUDGEMENT</b></h>
+<h style="color:#65C7F7">PREJUDGEMENT</h>
 <p>People often make prejudgments about people’s social background and appearance based on the way they speak, specifically when they talk in foreign accents, The minute we speak, we are giving clues about ourself — where we grew up, with whom we grew up, and where we went to school. Languages possess the power to shape narratives and build atmospheres within groups and communities.<br><br> This website will showcase audios from different speakers of Chinese descents, where it invites you to form ideas about them when you hear their voices.</p>
 	<br>
 <hr>
 <br>
 <br>
-<h style="color:#027EA8"><b>PURPOSE</b></h>
+<h style="color:#65C7F7">PURPOSE</h>
 <p>It welcomes audiences to make guesses and judgements about the social background of the speaker by listening to the audio only before researching the speaker and clicking the speaker’s name for biological information. It is an interactive process for individuals themselves to distinguish if they make biased prejudgements unconsciously based on listening to the way people speak in the following audios.  
 </p>
 </div>
 	
 <style>
+	
+hr {color:#65C7F7;}
+	
+	.active:hover {
+		border-radius: 45% 55% 37% 63% / 47% 40% 60% 53%;
+	}
+	
 a:link {
   text-decoration: none;
 	font-family: "Avenir";
@@ -35,12 +46,25 @@ a:link {
 body {margin:0;
 background:black;
 }
-	
-p {
-	color: #F0EFED;
+
+h { 
 	font-size: 17px;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-family:"Avenir";
+	font-weight: 500;
+		
+	}
+p {
+	color: white;
+	font-size: 15px;
+	font-family:"Avenir";
 	font-weight: 300;
+}
+
+	
+a:link {
+  text-decoration: none;
+  font-family: "Avenir";
+  font-size: 15px;
 }
 
 ul {
@@ -49,24 +73,22 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: black;
-	z-index: 3;
-	position: fixed;
-	  border-bottom: 1px solid #F0EFED;
-	width: 100%;
+  z-index: 3;
+  position: fixed;
+  border-bottom: 1px solid #65C7F7;
+  width: 100%;
 }
 
 li {
-  float: right;
+  float: left;
 }
 
 li a {
   display: block;
   color: white;
-  text-align: right;
-  padding: 14px 40px;
+  text-align: center;
+  padding: 15px 40px;
   text-decoration: none;
-	font-family: "Avenir";
-	font-size: 14px;
 }
 
 li a:hover {
@@ -74,14 +96,23 @@ li a:hover {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #65C7F7;
+	border-radius: 45% 55% 37% 63% / 47% 40% 60% 53%;
 }
 
 .active {
-  background-color: #3DB9E4;
+  background-image: linear-gradient(to bottom left, #0052D4, #65C7F7,#9CECFB);
 }
 
-	.content {
+.light {
+  color: white;
+}
+
+.sub {
+	float: right;
+}
+
+.content {
 		width: 40%;
 		padding: 10%;
 	}

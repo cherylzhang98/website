@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* width */
 
-	
 body {
     margin: 0;
     background: black;
@@ -11,6 +10,16 @@ body {
 .sub {
 	float: right;
 }
+
+.active1 {
+	background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
+}
+
+/*
+.title:hover{
+	background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
+}
+*/
 
 .split {
   height: 100%;
@@ -54,7 +63,7 @@ body {
   margin: 10px -16px;
 }
 
-/* Add padding BETWEEN each column */
+
 .row,
 .row > .column {
   padding: 2%;
@@ -63,25 +72,25 @@ body {
 
 /* Create three equal columns that floats next to each other */
 .column {
-/*  float: left;*/
+
 	margin-left: 15%;
     width: 50%;
     display: none; 
 }
 
-/* Clear floats after rows */ 
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
+
 .content {
 	border-radius: 30px;
 	background-color:white;
 	width: 240px;
-	border-style: double;
+/*	border:1px solid #65C7F7;*/
 	margin-left: 22%;
 	margin-bottom: 10%;
 }
@@ -117,16 +126,15 @@ body {
 }
 
 .btn:hover {
-  background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
-  color: white;
+  background-color: #65C7F7;
+	color: white;
 }
 
 .btn.active {
-  background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
+  background-image: #65C7F7;
   color: white;
 }
 
-/* CSS Document */
 a:link {
   text-decoration: none;
   font-family: "Avenir";
@@ -164,10 +172,11 @@ li a:hover {
 li a:hover:not(.active) {
   background-color: #65C7F7;
 	border-radius: 45% 55% 37% 63% / 47% 40% 60% 53%;
+
 }
 
 .active {
-  background-image: linear-gradient(to bottom left, #0052D4, #65C7F7,#9CECFB);
+  background-color: #65C7F7;
 }
 
 .light {
@@ -176,11 +185,9 @@ li a:hover:not(.active) {
 
 
 
-/**/
-
 .instruction {
 	color: white;
-	width: 470px;
+	width: 500px;
 	margin-top: -6%;
 	padding-left: 14%;
 	padding-bottom: 10%;
@@ -207,6 +214,10 @@ li a:hover:not(.active) {
 	font-size: 15px;
 }
 
+.centered p:hover{
+	color: white;
+}
+
 .box1 {
 	background-color: white;
 	width: 250px;
@@ -218,13 +229,12 @@ li a:hover:not(.active) {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .box2 {
 	background-color: white;
 	width: 250px;
 	height:250px;
 	float: right;
-	border-radius:36% 64% 70% 30% / 30% 30% 70% 70%;
+	border-radius:59% 41% 56% 44% / 26% 45% 55% 74%; 
 	padding: 5%;
 	background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
 }
@@ -237,7 +247,7 @@ li a:hover:not(.active) {
 	border-radius: 69% 31% 54% 46% / 41% 66% 34% 59%;
 	padding: 10%;
 	background-image: linear-gradient(to top right, #0052D4, #65C7F7,#9CECFB);
-	margin-top: 30%;
-	margin-bottom: 25%;
+	margin-top: 40%;
+	margin-bottom: 7%;
 	
 }
