@@ -1,19 +1,16 @@
 @charset "UTF-8";
 /* width */
 
+	
 body {
     margin: 0;
-    background: #f0efed;
-	overflow-y: hidden;
+    background: black;
+	overflow-y: scroll;
 }
 
-p {
-  color: white;
-  font-size: 15px;
-  font-family:'antic-slab';
-  font-weight: 300;
+.sub {
+	float: right;
 }
-
 
 .split {
   height: 100%;
@@ -25,10 +22,17 @@ p {
   padding-top: 20px;
 }
 
+.left::-webkit-scrollbar {
+	display: none;}
+
 .left {
   left: 0;
   background-color: black;
 }
+
+.right::-webkit-scrollbar {
+	display: none;}
+
 
 .right {
   right: 0;
@@ -37,6 +41,7 @@ p {
   padding-top: 10%;
   left: 50;
   text-align: center;
+	margin-left: 50%;
 }
 
 
@@ -55,13 +60,13 @@ p {
   padding: 2%;
 }
 
+
 /* Create three equal columns that floats next to each other */
 .column {
 /*  float: left;*/
 	margin-left: 15%;
     width: 50%;
     display: none; 
-	/* Hide all elements by default */
 }
 
 /* Clear floats after rows */ 
@@ -73,24 +78,22 @@ p {
 
 /* Content */
 .content {
-	margin-left: 10%;
-	border-radius: 25px;
-/*  	border: 1px solid white;*/
-/*	background-image: linear-gradient(to bottom, #606c88, #3f4c6b);*/
+	border-radius: 30px;
 	background-color:white;
+	width: 240px;
+	border-style: double;
+	margin-left: 22%;
+	margin-bottom: 10%;
+}
+
+.grid-container {
 	text-align: center;
+	display: grid;
+  	grid-template-columns: auto auto;	
+	padding: 5%;
 }
 
-.content h4 {
-	color: black;
-	font-display: none;
-}
 
-.content p{
-	color:#3DB9E4;
-	font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
-    font-weight: 400;
-}
 
 /*filter*/
 .show {
@@ -100,11 +103,11 @@ p {
 /* Style the buttons */
 .btn {
 	margin-left: 3%;
-  border: none;
-  outline: none;
-  padding: 13px 30px;
-  background-color: white;
-  cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 13px 30px;
+    background-color: white;
+    cursor: pointer;
 	color: #3DB9E4;
 	font-family: "Avenir";
 	font-weight: 500;
@@ -114,12 +117,12 @@ p {
 }
 
 .btn:hover {
-  background-color: #3DB9E4;
+  background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
   color: white;
 }
 
 .btn.active {
-  background-color: #3DB9E4;
+  background-image: linear-gradient(to bottom right, #0052D4, #65C7F7,#9CECFB);
   color: white;
 }
 
@@ -127,7 +130,7 @@ p {
 a:link {
   text-decoration: none;
   font-family: "Avenir";
-  font-size: 14px;
+  font-size: 15px;
 }
 
 ul {
@@ -138,7 +141,7 @@ ul {
   background-color: black;
   z-index: 3;
   position: fixed;
-  border-bottom: 1px solid #3DB9E4;
+  border-bottom: 1px solid #65C7F7;
   width: 100%;
 }
 
@@ -150,7 +153,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 40px;
+  padding: 15px 40px;
   text-decoration: none;
 }
 
@@ -159,11 +162,12 @@ li a:hover {
 }
 
 li a:hover:not(.active) {
-  background-color: #111;
+  background-color: #65C7F7;
+	border-radius: 45% 55% 37% 63% / 47% 40% 60% 53%;
 }
 
 .active {
-  background-color: #3db9e5;
+  background-image: linear-gradient(to bottom left, #0052D4, #65C7F7,#9CECFB);
 }
 
 .light {
@@ -189,7 +193,7 @@ li a:hover:not(.active) {
 
 .centered h{
 	color: white;
-	font-size: 20px;
+	font-size: 17px;
 	font-family:"Avenir";
 	font-weight: 500;
 	text-shadow: 0 0 3px black;
@@ -197,10 +201,10 @@ li a:hover:not(.active) {
 }
 
 .centered p{
-	color: white;
+	color: black;
 	font-family:"Avenir";
     font-weight: 500;
-	font-size: 16px;
+	font-size: 15px;
 }
 
 .box1 {

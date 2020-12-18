@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <title>Accent</title>
     <link rel="stylesheet" href="style.css" />
-	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!--	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>-->
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
 	
 
   <body>
 
     <ul>
-      <li><a class="active" href="../website/index.html">Prejudgement</a></li>
-      <li><div class="about"><a href="../website/about.html">About</a></div></li>
-		<li><div class="study"><a href="../website/evaluation.html">Social Evaluation Study</a></div></li>
+		<div class="title">
+      <li><a class="active" href="../website/index.html">PREJUDGEMENT</a></li></div>
+		<div class="sub">
+        <li><div class="about"><a href="../website/about.html">About</a></div></li>
+		<li><div class="study"><a href="../website/evaluation.html">Why this is IMPORTANT</a></div></li>
+		<li><div class="about"><a href="../website/about.html">Analysis</a></div></li>
+		</div>
     </ul>
 
 <div class="split left">
@@ -29,93 +35,376 @@
 <div class="row">
   <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio1">
 		<source src="../website/audios/jimmyoyang.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/jimmy.html"><h4>VIEW</h4></a>
+		
+			<div class="grid-item1">
+		<div class="jimmy">
+    <div onclick="playAudio1()"  id = "jimmy">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
     </div>
-  </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio1()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/jimmy.html">
+			<h style="float:right; font-size:15px;">View Speaker OU</h></a>
+		</div>
+  </div>	
+	
   <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio2">
 		<source src="../website/audios/yaoming.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/yaoming.html"><h4>VIEW</h4></a>
+		
+			<div class="grid-item1">
+		<div class="yaoming">
+    <div onclick="playAudio2()"  id = "yaoming">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
     </div>
-  </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio2()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/yaoming.html">
+			<h style="float:right;font-size:15px;">View Speaker YAO</h></a>
+		</div>
+  </div>	
+	
   <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div class="content">
-		<audio controls style="width: 100%;">
-		<source src="../website/audios/songmeiling.mp3" type="audio/mp3"></audio>
-		<a href="../website/speakers/songmeiling.html">
-		<h4>VIEW</h4></a>
-	  </div>
+   
+	  
+	  <div class="content">
+		<div class="grid-container">
+		<audio id="myAudio3">
+		<source src="../website/audios/songmeiling.mp3" type="audio/mp3">
+		</audio>
+		
+			<div class="grid-item1">
+		<div class="songmeiling">
+    <div onclick="playAudio3()"  id = "songmeiling">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
+    </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio3()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/songmeiling.html">
+			<h style="float:right;font-size:15px;">View Speaker SONG</h></a>
+		</div>
   </div>
-  
+	
   <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio4">
 		<source src="../website/audios/maggiecheung.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/maggie.html">
-			<h4>VIEW</h4></a>
-  </div>
+		
+			<div class="grid-item1">
+		<div class="maggie">
+    <div onclick="playAudio4()"  id = "maggie">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
+    </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio4()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	
+	  <a href="../website/speakers/maggie.html">
+			<h style="float:right;font-size:15px;">View Speaker CHEUNG</h></a>
+		</div>
 </div>
 	  
   <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio5">
 		<source src="../website/audios/yuanlongping.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/yuanlongping.html">
-			<h4>VIEW</h4></a>
+		
+			<div class="grid-item1">
+		<div class="yuanlongping">
+    <div onclick="playAudio5()"  id = "yuanlongping">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
     </div>
-  </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio5()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/yuanlongping.html">
+			<h style="float:right;font-size:15px;">View Speaker YUAN</h></a>
+		</div>
+  </div>	
+	
   <div class="column 1" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio6">
 		<source src="../website/audios/edisonchen.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/edison.html">
-			<h4>VIEW </h4></a>
-	</div>
+		
+			<div class="grid-item1">
+		<div class="edison">
+    <div onclick="playAudio6()"  id = "edison">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
+    </div>
+		</div>
+			</div>
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio6()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/edison.html">
+			<h style="float:right;font-size:15px;">View Speaker CHEN</h></a>
+		</div>
   </div>
 
   <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio7">
 		<source src="../website/audios/liuqiangdong.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/liuqiangdong.html">
-			<h4>VIEW</h4></a>
+		
+			<div class="grid-item1">
+		<div class="liuqiangdong">
+    <div onclick="playAudio7()"  id = "yudeling">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
     </div>
-  </div>
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio7()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/liuqiangdong.html">
+			<h style="float:right;font-size:15px;">View Speaker LIU</h></a>
+		</div>
+	</div>
+	
   <div class="column 3" ondrop="drop(event)" ondragover="allowDrop(event)">
     <div class="content">
-		<audio controls style="width: 100%;">
+		<div class="grid-container">
+		<audio id="myAudio8">
 		<source src="../website/audios/yudeling.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/yudeling.html">
-			<h4>VIEW</h4></a>
+		
+			<div class="grid-item1">
+		<div class="yudeling">
+    <div onclick="playAudio8()"  id = "yudeling">
+    <img src="../website/300ppi/play.png" style="width: 20px;">
     </div>
-  </div>
-  <div class="column 2" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <div class="content">
-		<audio controls style="width: 100%;">
+		</div>
+			</div>
+			
+			
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio8()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+	</div> 
+	   </div>
+		</div>		
+	  
+	  <a href="../website/speakers/yudeling.html">
+			<h style="float:right;font-size:15px;">View Speaker YU</h></a>
+		</div>
+	</div>
+	
+  <div class="column 2" >
+	 <div class="content" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <div class="grid-container">
+		
+		<audio id="myAudio9">
 		<source src="../website/audios/jackma.mp3" type="audio/mp3">
 		</audio>
-		<a href="../website/speakers/jackma.html">
-			<h4>VIEW</h4></a>
-    </div>
-  </div>
-</div>
-</div>
-	</div>
-	  </div>
 
+		<div class="grid-item1">
+    <div onclick="playAudio9()"  id = "jack">
+    <img src="../website/300ppi/play.png" style="width: 20px;" >
+    </div>
+		</div>
+		
+		<div class="grid-item2">	
+	<div class="button">
+	<div onclick="pauseAudio9()">
+		<img src="../website/300ppi/pause.png" style="width: 20px;">
+	</div> 		
+    </div> 
+		</div>
+		 </div>
+		
+	<a href="../website/speakers/jackma.html">
+		<h style="float:right;font-size:15px;">View Speaker MA</h></a>
+		 
+		 </div>
+   </div>
+	
+	
+</div>
+	 </div>
+		</div>
+		</div>  
+	
+	
+	
+  
+	
+	 
+	  
+<script>
+var a = document.getElementById("myAudio1"); 
+var b = document.getElementById("myAudio2"); 
+var c = document.getElementById("myAudio3"); 
+var d = document.getElementById("myAudio4"); 
+var e = document.getElementById("myAudio5"); 
+var f = document.getElementById("myAudio6"); 
+var g = document.getElementById("myAudio7"); 
+var h = document.getElementById("myAudio8"); 
+var x = document.getElementById("myAudio9"); 
+	
+	function playAudio1() { 
+    a.play(); 
+} 
+	function playAudio2() { 
+    b.play(); 
+} 
+	function playAudio3() { 
+    c.play(); 
+} 
+	function playAudio4() { 
+    d.play(); 
+}
+	function playAudio5() { 
+    e.play(); 
+}
+	function playAudio6() { 
+    f.play(); 
+}
+	function playAudio7() { 
+    g.play();  
+}
+	function playAudio8() { 
+    h.play(); 
+}	
+	function playAudio9() { 
+    x.play(); 
+}
+	
+///
+	function pauseAudio1() { 
+    a.pause(); 
+} 
+	function pauseAudio2() { 
+    b.pause(); 
+} 
+	function pauseAudio3() { 
+    c.pause(); 
+} 
+	function pauseAudio4() { 
+    d.pause(); 
+}
+	function pauseAudio5() { 
+    e.pause(); 
+}
+	function pauseAudio6() { 
+    f.pause(); 
+}
+	function pauseAudio7() { 
+    g.pause(); 
+}
+	function pauseAudio8() { 
+    h.pause(); 
+}
+	function pauseAudio9() { 
+    x.pause(); 
+}
+	
+	
+//	function pauseAudio() { 
+//    a.pause(); 
+//    b.pause();
+//   	c.pause();
+//    d.pause();
+//    e.pause();
+//    f.pause();
+//	g.pause();
+//    h.pause();
+//    i.pause();
+//} 
+//	  
+	  
+	  </script>
+	  
+
+
+	  
 <div class="split right">
   <div class="centered">
-	  <div class="instruction"><h>After listening to the audios, drag words from the three categories below that best relate to how you imagine the speakers. </h></div>
+	  <div class="instruction">After listening to the audios, drag words from the three categories below to the audio box that best relate to how you imagine the speakers.</div>
 	  <div class="box1"><h>ATTRACTIVENESS</h>
 		  <p id="friendly" draggable="true" ondragstart="drag(event)">More Friendly</p>
 	  	  <p id="unfriendly" draggable="true" ondragstart="drag(event)">Less Friendly</p>
@@ -147,6 +436,7 @@
   </body>
 
   <script>
+	  
 function allowDrop(ev) {
   ev.preventDefault();
 }
